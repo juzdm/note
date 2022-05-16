@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-16T02:27:33.684Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="CbFglzL7t3qH0n_poAB1" version="18.0.2" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-05-16T03:46:38.147Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="U707TaFrKElCTDfzFGUy" version="18.0.2" type="github" pages="4">
   <diagram id="2f404044-711c-603c-8f00-f6bb4c023d3c" name="Page-1">
     <mxGraphModel dx="942" dy="582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -241,17 +241,97 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="_L7-r4CPafVJ_IG5AdNn-2" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/thin-line-icons-for-seo-and-development-1/64/seo_programming-128.png;imageBackground=default;" vertex="1" parent="1">
-          <mxGeometry x="190" y="340" width="128" height="128" as="geometry" />
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.16;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="EKr7-KJplQdj3L6SUnYN-1" target="EKr7-KJplQdj3L6SUnYN-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="655" y="312" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="_L7-r4CPafVJ_IG5AdNn-3" value="go code" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="230" y="460" width="60" height="20" as="geometry" />
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-1" value="" style="strokeColor=#d79b00;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="575.01" y="396" width="160" height="48" as="geometry" />
         </mxCell>
-        <mxCell id="_L7-r4CPafVJ_IG5AdNn-5" value="编译/打包" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="400" y="374" width="120" height="60" as="geometry" />
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-2" value="&lt;span style=&quot;text-align: center;&quot;&gt;server docker镜像&lt;/span&gt;" style="sketch=0;dashed=0;connectable=0;html=1;fillColor=#757575;strokeColor=none;shape=mxgraph.gcp2.image_services;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontSize=12;" vertex="1" parent="EKr7-KJplQdj3L6SUnYN-1">
+          <mxGeometry y="0.5" width="32" height="32" relative="1" as="geometry">
+            <mxPoint x="5" y="-16" as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="_L7-r4CPafVJ_IG5AdNn-6" value="docker" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="435" y="460" width="50" height="20" as="geometry" />
+        <mxCell id="_L7-r4CPafVJ_IG5AdNn-3" value="&lt;b&gt;go source&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="690" y="654" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-34" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="EKr7-KJplQdj3L6SUnYN-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655.01" y="519" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.875;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EKr7-KJplQdj3L6SUnYN-3" target="EKr7-KJplQdj3L6SUnYN-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-3" value="私有docker 仓库" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="777" y="268" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-11" value="push到&lt;br&gt;私有云" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="660" y="340" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-25" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#EA6B66;strokeWidth=2;" edge="1" parent="1" source="EKr7-KJplQdj3L6SUnYN-13" target="EKr7-KJplQdj3L6SUnYN-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-13" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=#d79b00;fillColor=#ffe6cc;shape=mxgraph.azure.rdp_remoting_file;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="999" y="634" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-33" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="EKr7-KJplQdj3L6SUnYN-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655.01" y="579" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-14" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=#d79b00;fillColor=#ffe6cc;shape=mxgraph.azure.code_file;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="620.63" y="634" width="68.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-15" value="&lt;b&gt;k8s yaml file&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="909" y="654" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-32" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=#EA6B66;strokeWidth=2;" edge="1" parent="1" source="EKr7-KJplQdj3L6SUnYN-24" target="EKr7-KJplQdj3L6SUnYN-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-24" value="IT K8s platform" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="962" y="519" width="144" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-28" value="" style="shape=mxgraph.gcp2.doubleRect;strokeColor=#d79b00;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;labelBackgroundColor=#FFE599;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="940" y="386" width="188" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-29" value="&lt;font style=&quot;background-color: rgb(255, 230, 204);&quot; color=&quot;#000000&quot;&gt;kubernetes&lt;/font&gt;" style="editableCssRules=.*;html=1;fontColor=#999999;shape=image;verticalLabelPosition=middle;labelBackgroundColor=#ffffff;verticalAlign=middle;labelPosition=right;align=left;spacingLeft=20;part=1;points=[];imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjMyOS45MjU5OTcyMzE3OTM4IiBoZWlnaHQ9IjM3OC4yODQ5OTAzMTEyNzg4IiB2aWV3Qm94PSIwIDAgODcuMjkyOTk5MjY3NTc4MTIgMTAwLjA4Nzk5NzQzNjUyMzQ0Ij4mI3hhOzxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+JiN4YTsJLnN0MHtmaWxsOiNhZWNiZmE7fSYjeGE7CS5zdDF7ZmlsbDojNjY5ZGY2O30mI3hhOwkuc3Qye2ZpbGw6IzQyODVmNDt9JiN4YTs8L3N0eWxlPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00My43NTEgMEwwIDI1LjQ2NXYyLjU4OCA0Ni45Mmw0My43NTIgMjUuMTE1IDQzLjU0MS0yNS4xMjFWMjUuNDczem0yLjQzOCAxMS44NTNsMzIuMTAzIDE4Ljc4MlY2OS43N0w0My43MzkgODkuNzA1IDkgNjkuNzYyVjMwLjY0MWwzMi4xOS0xOC43MzZ2MTQuMTU0TDI0LjUwMyAzNi4xNTNsMTkuMTcyIDExLjUwMiAxOC44ODYtMTEuNTU0LTE2LjM3Mi0xMC4wMjR6Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MSIgZD0iTTIyLjAyNSA0MC40OTZsLjE2NiAxOS4xNDMtMTMuMjQ3IDcuMzN2Mi43NDJsMi42MzcgMS41MTQgMTIuNjQ4LTYuOTk5IDE2Ljk2MSAxMC42MDJWNTEuOTkzeiIvPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik02NS4zNDQgNDAuMjZMNDYuMTg5IDUxLjk3OXYyMi44NDdsMTYuODk5LTEwLjU3NiAxMi41MzkgNi45NzQgMi42MDktMS41MDV2LTIuNzY1bC0xMi43ODQtNy4xMTJ6Ii8+JiN4YTs8L3N2Zz4=;" vertex="1" parent="EKr7-KJplQdj3L6SUnYN-28">
+          <mxGeometry width="26" height="30" relative="1" as="geometry">
+            <mxPoint x="17" y="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-31" value="从私有云&lt;br&gt;下载docker镜像" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="920" y="340" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-35" value="" style="strokeColor=#d79b00;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;labelBackgroundColor=#FFE599;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="570.01" y="519" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-36" value="&lt;font color=&quot;#000000&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 230, 204);&quot;&gt;docker编译打包&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="editableCssRules=.*;html=1;fontColor=#999999;shape=image;verticalLabelPosition=middle;labelBackgroundColor=#ffffff;verticalAlign=middle;labelPosition=right;align=left;spacingLeft=20;part=1;points=[];imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjM2NS40NjQ5OTY3NzA0MjQ5MyIgaGVpZ2h0PSIzNzkuMjIyOTk0NDYzNTc3OTUiIHZpZXdCb3g9IjAgMCA5Ni42OTU5OTkxNDU1MDc4MSAxMDAuMzM1OTk4NTM1MTU2MjUiPiYjeGE7PHN0eWxlIHR5cGU9InRleHQvY3NzIj4mI3hhOwkuc3Qwe2ZpbGw6IzQyODVmNDt9JiN4YTsJLnN0MXtmaWxsOiNhZWNiZmE7fSYjeGE7PC9zdHlsZT4mI3hhOwk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjkuNzk0IDEwMC4zMzZMNDYuOTIgNTAuMTY4aDQ5Ljc3NnpNMCA5OS42NzFsMTIuOTc2LTQ5LjUwMkgyOS4yMkwxNi44OTcgOTIuMDU0eiIvPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0yOS43OTQgMEw0Ni45MiA1MC4xNjhoNDkuNzc2ek0wIC42NjZsMTIuOTc2IDQ5LjUwMkgyOS4yMkwxNi44OTcgOC4yODN6Ii8+JiN4YTs8L3N2Zz4=;" vertex="1" parent="EKr7-KJplQdj3L6SUnYN-35">
+          <mxGeometry width="30" height="30" relative="1" as="geometry">
+            <mxPoint x="15" y="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="EKr7-KJplQdj3L6SUnYN-40" target="EKr7-KJplQdj3L6SUnYN-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="EKr7-KJplQdj3L6SUnYN-40" target="EKr7-KJplQdj3L6SUnYN-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-40" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=#d79b00;fillColor=#ffe6cc;shape=mxgraph.azure.computer;pointerEvents=1;labelBackgroundColor=#FFE599;" vertex="1" parent="1">
+          <mxGeometry x="827" y="730" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-51" value="&lt;b&gt;upload&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#EA6B66;" vertex="1" parent="1">
+          <mxGeometry x="983" y="600" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-52" value="&lt;b&gt;push&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#EA6B66;" vertex="1" parent="1">
+          <mxGeometry x="993" y="480" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EKr7-KJplQdj3L6SUnYN-54" value="&lt;b&gt;generate&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="655" y="480" width="70" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
