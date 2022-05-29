@@ -112,7 +112,81 @@ sudo LD_LIBRARY_PATH=$(realpath ./lib) ./tetragon --bpf-lib bpf/objs --log-level
 
 
 
-### 启动listerner
+### 启动listerner：tetra
+
+tetra是tetragon的一个CLI调试工具，tetra的具体参数和用法可以通过直接执行tetra查看。
+
+```bash
+Tetragon CLI
+
+Usage:
+  tetra [flags]
+  tetra [command]
+
+Available Commands:
+  bugtool         Produce a tar archive with debug information
+  getevents       Print events
+  help            Help about any command
+  sensors         Manage sensors
+  stacktrace-tree Manage stacktrace trees
+  status          Print health status
+  tracingpolicy   Manage tracing policies
+  version         Print version
+
+Flags:
+  -d, --debug                   Enable debug messages
+  -h, --help                    help for tetra
+      --server-address string   gRPC server address (default "localhost:54321")
+
+Use "tetra [command] --help" for more information about a command.
+```
+
+通过<mark style="color:red;">tetra getevents</mark>可以获取tetragon发送的ebpf事件。tetra默认以json格式输出，例如：
+
+```bash
+ $ ./tetra getevents | jq "."
+{
+  "process_exec": {
+    "process": {
+      "exec_id": "OjI0Njk4Mjk4ODYxNDI6MTI0NDE=",
+      "pid": 12441,
+      "uid": 0,
+      "cwd": "/run/containerd/io.containerd.runtime.v2.task/k8s.io/25ecffd7e2ee8332923500bd930eaebe2725bb643e7e9e2206b611f8666abac0/",
+      "binary": "/usr/local/sbin/runc",
+      "arguments": "--root /run/containerd/runc/k8s.io --log /run/containerd/io.containerd.runtime.v2.task/k8s.io/c7c9f733b618c7b46f0bd86e054fc5d940fbd7eb627cf009d6d9cd0584c846a6/log.json --log-format json exec --process /tmp/runc-process789407863 --detach --pid-file /run/containerd/io.containerd.runtime.v2.task/k8s.io/c7c9f733b618c7b46f0bd86e054fc5d940fbd7eb627cf009d6d9cd0584c846a6/4c9ea3805e0d2a23de4c0cdb983c52db832689aa821d3363ba8954b1b76359d9.pid c7c9f733b618c7b46f0bd86e054fc5d940fbd7eb627cf009d6d9cd0584c846a6",
+      "flags": "execve clone",
+      "start_time": "2022-05-29T10:54:19.452Z",
+      "auid": 4294967295,
+      "parent_exec_id": "OjMzMzgwMDAwMDAwOjI0NzM=",
+      "refcnt": 1
+    },
+    "parent": {
+      "exec_id": "OjMzMzgwMDAwMDAwOjI0NzM=",
+      "pid": 2473,
+      "uid": 0,
+      "cwd": "/run/containerd/io.containerd.runtime.v2.task/k8s.io/25ecffd7e2ee8332923500bd930eaebe2725bb643e7e9e2206b611f8666abac0",
+      "binary": "/usr/local/bin/containerd-shim-runc-v2",
+      "arguments": "-namespace k8s.io -id 25ecffd7e2ee8332923500bd930eaebe2725bb643e7e9e2206b611f8666abac0 -address /run/containerd/containerd.sock",
+      "flags": "procFS auid",
+      "start_time": "2022-05-29T10:13:43.002Z",
+      "auid": 0,
+      "parent_exec_id": "OjIyODIwMDAwMDAwOjExOTE=",
+      "refcnt": 4294967265
+    }
+  },
+  "time": "2022-05-29T10:54:19.452Z"
+}
+```
+
+通过<mark style="color:red;">tetra getevents  --output compact</mark> <mark style="color:blue;">能获取到更友好的输出。</mark>
+
+```bash
+./tetra getevents --output compact
+🚀 process  /usr/sbin/iptables -w 5 -W 100000 -S KUBE-KUBELET-CANARY -t mangle 
+💥 exit     /usr/sbin/iptables -w 5 -W 100000 -S KUBE-KUBELET-CANARY -t mangle 0 
+🚀 process  /usr/sbin/ip6tables -w 5 -W 100000 -S KUBE-KUBELET-CANARY -t mangle 
+💥 exit     /usr/sbin/ip6tables -w 5 -W 100000 -S KUBE-KUBELET-CANARY -t mangle 0 
+```
 
 ## docker中编译
 
