@@ -8,7 +8,7 @@ description: >-
 
 ## 调试依赖
 
-tetragon github说明调试都在virtualbox中进行，所以开始调试之前需要安装vagrant和virtualbox。
+tetragon github说明调试都在virtualbox中进行，所以开始<mark style="color:red;">调试之前需要安装vagrant和virtualbox</mark>。
 
 tetragon源码中有提供Vagrant，通过Vagrant启动virtualbox时，会自动安装所有的依赖和工具。详情参考tetragon源码。
 
@@ -190,9 +190,35 @@ Use "tetra [command] --help" for more information about a command.
 
 ## docker中编译
 
-## k8s cluster调试
+docker中编译的命令如下，在docker中编译默认会打包docker镜像，详细参考Makefile。
+
+```bash
+# Build Tetragon agent and operator images
+LD_LIBRARY_PATH=$(realpath ./lib) make LOCAL_CLANG=0 image image-operator
+
+# Bootstrap the cluster
+contrib/localdev/bootstrap-kind-cluster.sh
+
+# Install Tetragon
+contrib/localdev/install-tetragon.sh --image cilium/tetragon:latest --operator cilium/tetragon-operator:latest
+```
+
+整个过程因为会按照kind工具，并且通过kind 安装单节点k8s cluster，所以会比较慢。
+
+编译之后，tettagon会被部署在k8s cluster中，可以通过kubectl命令查看。
+
+```
+kubectl get pods -n kube-system
+```
 
 
 
-## k8s 调试
+## k8s cluster中调试
 
+
+
+当tetragon在k8s cluster中部署之后，通过下面的命令查查看事件上报，输出的log比较多（json格式），可以通过jq命令进行日志过滤。
+
+```
+kubectl logs -n kube-system ds/tetragon -c export-stdout -f
+```
