@@ -46,13 +46,13 @@ make tools-install
 * 然后编译bpf程序和go程序
 
 ```bash
-sudo LD_LIBRARY_PATH=$(realpath ./lib) ./tetragon --bpf-lib bpf/objs
+LD_LIBRARY_PATH=$(realpath ./lib) make
 ```
 
 此命令会编译所有的可执行程序和Test程序，调试过程中为了提高效率可以只编译<mark style="color:red;">tetra和tetragon。</mark>
 
 ```bash
-sudo LD_LIBRARY_PATH=$(realpath ./lib) ./tetragon --bpf-lib bpf/objs tetra  tetragon
+LD_LIBRARY_PATH=$(realpath ./lib) make tetra  tetragon
 ```
 
 然后可以看到本地生成了tetragon和tetra程序，后续会说明吗这两个程序的作用。
