@@ -32,7 +32,6 @@ diff --git a/Vagrantfildiffe b/Vagrantfile
    config.vm.box = "ubuntu/impish64"
 -  config.vm.disk :disk, size: "50GB"
    config.vm.provision :docker
-
 ```
 
 ## 本地编译
@@ -113,10 +112,7 @@ time="2022-05-29T10:37:57Z" level=info msg="Listening for events..."
 
 ```bash
 sudo LD_LIBRARY_PATH=$(realpath ./lib) ./tetragon --bpf-lib bpf/objs --log-level=debug
-
 ```
-
-
 
 ### 启动listerner：tetra
 
@@ -184,7 +180,7 @@ Use "tetra [command] --help" for more information about a command.
 }
 ```
 
-通过<mark style="color:red;">tetra getevents  --output compact</mark> <mark style="color:blue;">能获取到更友好的输出。</mark>
+通过<mark style="color:red;">tetra getevents --output compact</mark> <mark style="color:blue;">能获取到更友好的输出。</mark>
 
 ```bash
 ./tetra getevents --output compact
@@ -217,11 +213,7 @@ contrib/localdev/install-tetragon.sh --image cilium/tetragon:latest --operator c
 kubectl get pods -n kube-system
 ```
 
-
-
 ## k8s cluster中调试
-
-
 
 当tetragon在k8s cluster中部署之后，通过下面的命令查查看事件上报，输出的log比较多（json格式），可以通过jq命令进行日志过滤。
 
