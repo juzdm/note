@@ -18,7 +18,7 @@ description: 调研目前容器安全的实现方案
 
 2\)      抓取多种网络连接，并抓取详细的数据包
 
-![](<.gitbook/assets/image (1).png>)
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 3\)      还有数据包匹配过滤等类似wireshack的功能
 
@@ -26,7 +26,7 @@ description: 调研目前容器安全的实现方案
 
 Github官网：[https://github.com/up9inc/mizu/wiki/Introduction-to-Mizu](https://github.com/up9inc/mizu/wiki/Introduction-to-Mizu)
 
-![](<.gitbook/assets/image (3).png>)
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 #### 部署方法
 
